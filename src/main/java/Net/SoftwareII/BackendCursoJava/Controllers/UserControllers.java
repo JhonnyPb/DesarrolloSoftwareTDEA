@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import Net.SoftwareII.BackendCursoJava.Modells.Request.UserDetailRequestModel;
 import Net.SoftwareII.BackendCursoJava.Modells.Responses.UserRest;
+import Net.SoftwareII.BackendCursoJava.Shared.DTO.UserDto;
 
 @RestController
 @RequestMapping("/users") //localHost/users
@@ -22,6 +23,8 @@ public class UserControllers {
 
    @PostMapping
    public UserRest creandoUsers(@RequestBody UserDetailRequestModel userDetails){
+       UserRest userToReturn = new UserRest();
+       UserDto  userDTO = new UserDto();
        return null;
    }
 
